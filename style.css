@@ -1,0 +1,45 @@
+.navbar_items {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar_items li {
+    margin-right: 10px;
+}
+
+.hero-image {
+    background-image: url('assets/hero_image.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-content h2 {
+    text-align: center;
+
+    font-size: 40px;
+    color: white;
+}
+
+.cta-button {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
