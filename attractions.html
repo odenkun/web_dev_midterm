@@ -10,17 +10,63 @@
 
 <body>
     <header>
-        <h1>Welcome to Attractions</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="attractions.html">Attractions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Navbar -->
+        <div id="navbar"></div>
+        <script type="module">
+            import { navbarTemplate } from './components/navbar.js';
+            document.getElementById('navbar').innerHTML = navbarTemplate;
+        </script>
     </header>
 
-    <!-- Your content goes here -->
+    <!-- Hero Section -->
+    <div class="attractions-hero">
+        <h1>Explore Our Attractions</h1>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description">
+        <p>Discover the most exciting and beautiful attractions our area has to offer. From scenic parks to cultural landmarks, there's something for everyone to enjoy.</p>
+    </div>
+
+    <!-- Attractions Grid -->
+    <div class="attractions-grid">
+        <div class="attraction-card">
+            <img src="assets/attraction1.png" alt="Attraction 1">
+            <h3>Space Mountain</h3>
+            <p>Blast off on a high-speed adventure through outer space on this thrilling indoor roller coaster.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="attraction-card">
+            <img src="assets/attraction2.png" alt="Attraction 2">
+            <h3>Haunted Mansion</h3>
+            <p>Enter if you dare! Explore the spooky and mysterious rooms of this haunted estate.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="attraction-card">
+            <img src="assets/attraction3.png" alt="Attraction 3">
+            <h3>Pirates of the Caribbean</h3>
+            <p>Set sail on a swashbuckling adventure and encounter pirates, treasure, and ghostly specters.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="attraction-card">
+            <img src="assets/attraction4.png" alt="Attraction 4">
+            <h3>It's a Small World</h3>
+            <p>Embark on a delightful boat ride around the globe featuring whimsical dolls and songs of harmony.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="attraction-card">
+            <img src="assets/attraction5.png" alt="Attraction 5">
+            <h3>Big Thunder Mountain Railroad</h3>
+            <p>Hold on to your hats! This runaway mine train ride takes you through the wild and rugged Old West.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="attraction-card">
+            <img src="assets/attraction6.png" alt="Attraction 6">
+            <h3>Sleeping Beauty Castle</h3>
+            <p>Walk through the iconic castle and discover the story of Princess Aurora with dazzling displays.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2022 Attractions. All rights reserved.</p>
