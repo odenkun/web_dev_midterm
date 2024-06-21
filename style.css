@@ -57,6 +57,12 @@
   }
 }
 
+.cta-button:hover {
+    background-color: red;
+    transform: scale(1.1);
+    animation: none;
+}
+
 /* ACCOMODATIONS PAGE */
 
 .hotel-section {
