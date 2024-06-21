@@ -43,6 +43,18 @@
     border-radius: 5px;
     padding: 10px 20px;
     margin-top: 10px;
+    animation: pulse 1000ms ease 600ms infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ACCOMODATIONS PAGE */
