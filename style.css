@@ -1,3 +1,5 @@
+/* SHARED */
+
 .navbar_items {
     display: flex;
     justify-content: center;
@@ -30,7 +32,6 @@
 
 .hero-content h2 {
     text-align: center;
-
     font-size: 40px;
     color: white;
 }
@@ -42,4 +43,128 @@
     border-radius: 5px;
     padding: 10px 20px;
     margin-top: 10px;
+}
+
+/* ACCOMODATIONS PAGE */
+
+.hotel-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-section h2 {
+    margin-top: 0;
+}
+
+.hotel-image-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hotel-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* ACCOMODATIONS PAGE */
+
+.attractions-hero {
+    position: relative;
+    background: url('assets/hero_image.webp') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attractions-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Default for mobile devices (1x6) */
+.attractions-grid {
+    grid-template-columns: 1fr;
+}
+
+/* For tablets (2x3) */
+@media (min-width: 600px) {
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For desktops (3x2) */
+@media (min-width: 900px) {
+    .attractions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.attraction-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.attraction-card h3 {
+    margin: 10px 0;
+}
+
+.attraction-card p {
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.attraction-card button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.attraction-card button:hover {
+    background-color: #0056b3;
 }

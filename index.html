@@ -8,16 +8,15 @@
 <body>
     <header>
         <h1>Welcome to Fantasy Land</h1>
+        <!-- Navbar -->
+        <div id="navbar"></div>
+        <script type="module">
+            import { navbarTemplate } from './components/navbar.js';
+            document.getElementById('navbar').innerHTML = navbarTemplate;
+        </script>
     </header>
 
-    <nav>
-        <ul class="navbar_items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="accomodations.html">Accomodations</a></li>
-            <li><a href="things_to_do.html">Things To DO</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+
 
     <div class="hero-image">
         <div class="hero-content">

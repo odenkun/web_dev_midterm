@@ -5,51 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accommodations</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="accommodations.html">Accommodations</a></li>
-            <!-- Add more navbar items as needed -->
-        </ul>
-    </nav>
+    <header>
+        <!-- Navbar -->
+        <div id="navbar"></div>
+        <script type="module">
+            import { navbarTemplate } from './components/navbar.js';
+            document.getElementById('navbar').innerHTML = navbarTemplate;
+        </script>
+    </header>
 
     <!-- Content -->
     <h1>Hotels near the attraction</h1>
     <!-- Add hotel information here -->
-    <div class="hotel-section">
-        <div class="hotel-info">
-            <h2>Hotel 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam ultricies, nisl odio tincidunt nunc, id lacinia nunc nisl id nunc.</p>
-        </div>
-        <div class="hotel-image">
-            <img src="hotel1.jpg" alt="Hotel 1">
-        </div>
-    </div>
-
-    <div class="hotel-section">
-        <div class="hotel-info">
-            <h2>Hotel 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam ultricies, nisl odio tincidunt nunc, id lacinia nunc nisl id nunc.</p>
-        </div>
-        <div class="hotel-image">
-            <img src="hotel2.jpg" alt="Hotel 2">
+    <div class="hotel-section">        
+        <h2>Oasis Retreat</h2>
+        <p>Discover a tranquil haven in the heart of the city at Oasis Retreat. Our spacious rooms and serene atmosphere offer the perfect escape from the hustle and bustle.</p>
+        
+        <div class="hotel-image-container">
+            <img src="assets/hotel_1.webp" alt="Oasis Retreat Image">
         </div>
     </div>
 
-    <div class="hotel-section">
-        <div class="hotel-info">
-            <h2>Hotel 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam ultricies, nisl odio tincidunt nunc, id lacinia nunc nisl id nunc.</p>
-        </div>
-        <div class="hotel-image">
-            <img src="hotel3.jpg" alt="Hotel 3">
+    <div class="hotel-section">        
+        <h2>Serenity Suites</h2>
+        <p>Experience unparalleled luxury and comfort at Serenity Suites, where modern amenities meet elegant design. Enjoy breathtaking views and top-notch service in every stay.</p>
+        
+        <div class="hotel-image-container">
+            <img src="assets/hotel_2.webp" alt="Serenity Suites Image">
         </div>
     </div>
+    
+
+    <div class="hotel-section">        
+        <h2>Grand Horizon Hotel</h2>
+        <p>Indulge in the grandeur of Grand Horizon Hotel, where luxury meets sophistication. Enjoy our world-class amenities and exceptional service for an unforgettable stay.</p>
+        
+        <div class="hotel-image-container">
+            <img src="assets/hotel_3.webp" alt="Grand Horizon Hotel Image">
+        </div>
+    </div>
+    
 
     <!-- Footer -->
     <footer>
