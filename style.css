@@ -1,5 +1,9 @@
 /* SHARED */
 
+html, body {
+    height: 100%;
+}
+
 .navbar_items {
     display: flex;
     justify-content: center;
