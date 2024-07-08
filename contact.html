@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodations</title>
+    <link rel="stylesheet" href="main.css">    
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div id="navbar"></div>
+        <script type="module">
+            import { navbarTemplate } from './components/navbar.js';
+            document.getElementById('navbar').innerHTML = navbarTemplate;
+        </script>
+    </header>
+
+    <div class="contactUs">
+      <div class="title">
+        <h2>Get in Touch</h2>
+      </div>
+
+      <div class="box">
+        <!-- Form -->
+        <div class="contact form"></div>
+        <h3>Leave Your Message</h3>
+        <form>
+          <div class="formBox">
+            
+            <div class="row50">
+              <div class="inputBox">
+                <span>First Name</span>
+                <input type="text" placeholder="John">
+              </div>
+              <div class="inputBox">
+                <span>Last Name</span>
+                <input type="text" placeholder="Doe">
+              </div>
+            </div>
+
+             <div class="row50">
+              <div class="inputBox">
+                <span>Email Address</span>
+                <input type="text" placeholder="johndoe@email.com">
+              </div>
+              <div class="inputBox">
+                <span>Contact Number</span>
+                <input type="text" placeholder="+92 321 9999999">
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class='inputBox'>
+                <span>Message</span>
+                <textarea> placeholder="Write your message here..."</textarea>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class='inputBox'>
+                <imput type="submit" value="Send">
+              </div>
+            </div>
+            
+          </div>
+        </form>
+        
+        <!-- Information Box -->
+        <div class="contact info">
+          <h3>Contact Info</h3>
+          <div> class="infoBox">
+            
+            <div>
+              <span><ion-icon name="location"></ion-icon></span>
+              <p>ABC Road, MNO City, <br>XYZ Country</p>
+            </div>
+
+            <div>
+              <span><ion-icon name="mail"></ion-icon></span>
+              <a> href="mailto:info@fantasyland.com">info@fantasyland.com</a>
+            </div>
+
+            <div>
+              <span><ion-icon name="call"></ion-icon></span>
+              <a> href="tel:+92 321 9999999">+92 321 9999999</a>
+            </div>
+            <!-- Social Media Links -->
+            <ul class="sci">
+              <li><a> href="#"><ion-icon name="logo-facebook"><ion-icon></ion-icon></a></li>
+              <li><a> href="#"><ion-icon name="logo-twitter"><ion-icon></ion-icon></a></li>
+              <li><a> href="#"><ion-icon name="logo-linkedin"><ion-icon></ion-icon></a></li>
+              <li><a> href="#"><ion-icon name="logo-instagram"><ion-icon></ion-icon></a></li>
+            </ul>
+            
+          </div>
+        </div>
+        
+        <!-- Map -->
+        <div class="contact map">
+          <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21.733591647811853!2d-135.00065874421156!3d84.99997279495189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4f9344da9515b951%3A0x4518d0c4d5c68876!2sNorth%20Pole!5e0!3m2!1sen!2s!4v1720418738073!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width= "600" height="450" style="border:0," allowfullscreen=""loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+        
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicon/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
