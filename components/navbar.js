@@ -1,6 +1,6 @@
 // navbar.js
 export const navbarTemplate = `
-<nav>
+<nav aria-label="navigation bar">
     <ul class="navbar_items">
         <li><a href="index.html">Home</a></li>
         <li><a href="accomodations.html">Accomodations</a></li>
